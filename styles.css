@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+h1, h2, h3, h4, h5, h6, b {
+    margin: 0;
+}
+
+:root {
+    --max-width: 800px;
+    --color-bg-light: rgb(254, 254, 254);
+    --color-bg-dark: rgb(240, 240, 237);
+    --primary-color: #dcf2df;
+    --secondary-color: #ece8e8;
+    --text-color: #333333;
+    --heading-color: #505050;
+    --accent-color: rgb(35, 76, 76);;
+}
+
+@font-face {
+    font-family: 'OldGoody';
+    src: url('assets/font/QTOldGoudy.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OldGoodyItalic';
+    src: url('assets/font/QTOldGoudy-Italic.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OldGoodyBold';
+    src: url('assets/font/QTOldGoudy-Bold.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'OldGoody', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    background-color: var(--color-bg-dark);
+}
+
+header {
+    width: 100%;
+    min-height: 40vh;
+    background-image: url('assets/header-bg.webp');
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    z-index: 3;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 0.5em;
+    border-bottom: 1px solid var(--secondary-color);
+    background-color: var(--color-bg-light);
+}
+
+p {
+    text-align: justify;
+}
+
+
+header h1 {
+    font-family: 'OldGoodyBold', sans-serif;
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    margin: 0;
+}
+header h2 {
+    font-family: 'OldGoodyBold', sans-serif;
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin: 0;
+}
+
+main > section:nth-child(odd) {
+    background-color: var(--color-bg-light);
+}
+
+main > section:nth-child(even) {
+    background-color: var(--color-bg-dark);
+}
+
+section {
+    padding-bottom: 4em;
+    padding-top: 4em;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 40em;
+    justify-content: center;
+}
+
+section h2 {
+    font-family: 'OldGoodyItalic', sans-serif;
+    color: var(--accent-color);
+    margin-bottom: 0.5em;
+    margin-top: 1.25em;
+}
+
+section h1 {
+    color: var(--accent-color);
+    margin-bottom: 0.5em;
+    position: relative;
+}
+
+section h1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 3em;
+    height: 2px; /* or 2px, depending on desired thickness */
+    background-color: currentColor; /* inherits text color */
+}
+
+.split-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2em;
+}
+
+.split-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+}
+
+.contact-icon {
+    width: 4em;
+    aspect-ratio: 1;
+}
+address {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    padding: 2em;
+}
+
+address > div {
+    text-align: right;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+}
+
+blockquote {
+    font-style: italic;
+    line-height: 1.8;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+blockquote div {
+    text-align: end;
+}
