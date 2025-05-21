@@ -118,7 +118,7 @@ section {
     padding-top: 4em;
     margin: auto;
     display: grid;
-    grid-template-columns: 40em;
+    grid-template-columns: 60em;
     justify-content: center;
 }
 
@@ -156,6 +156,7 @@ section h1::before {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2em;
+    align-items: center;
 }
 
 .contact-icon {
