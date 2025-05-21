@@ -145,10 +145,9 @@ section h1::before {
     background-color: currentColor; /* inherits text color */
 }
 
-.split-4 {
+.split-3 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2em;
 }
 
