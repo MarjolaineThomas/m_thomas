@@ -189,3 +189,7 @@ blockquote {
 blockquote div {
     text-align: end;
 }
+
+.rounded {
+    border-radius: 50%;
+}
