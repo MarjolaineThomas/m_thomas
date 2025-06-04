@@ -62,6 +62,13 @@ header {
     justify-items: center;
     gap: 4em;
     text-align: center;
+    color: var(--accent-color);
+}
+
+header > .title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
 }
 
 a {
